@@ -43,14 +43,18 @@ from src.model1_tabular import (
     save_model,
     train_all_models,
 )
-from src.model2_image import (
-    build_cnn_image_only,
-    build_cnn_multimodal,
-    train_image_only,
-    train_multimodal,
-    evaluate_binary,
-    save_keras_model,
-)
+try:
+    from src.model2_image import (
+        build_cnn_image_only,
+        build_cnn_multimodal,
+        train_image_only,
+        train_multimodal,
+        evaluate_binary,
+        save_keras_model,
+    )
+    TF_AVAILABLE = True
+except ImportError:
+    TF_AVAILABLE = False
 from src.utils import get_csv_path, get_jsrt_root, get_models_dir
 
 

@@ -28,7 +28,11 @@ from src.utils import get_models_dir, risk_label, cancer_label
 from src.data_loader import get_tabular_features, load_tabular_data, load_single_image
 from src.preprocessing import load_scaler, preprocess_single_patient
 from src.model1_tabular import load_model, get_probabilities
-from src.model2_image import load_keras_model, predict_single_image
+try:
+    from src.model2_image import load_keras_model, predict_single_image
+    TF_AVAILABLE = True
+except ImportError:
+    TF_AVAILABLE = False
 
 
 # ─── Chemins modèles ──────────────────────────────────────────────────────────
