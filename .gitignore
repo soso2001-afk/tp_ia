@@ -1,0 +1,32 @@
+# Environnements virtuels
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Modèles entraînés (trop lourds pour git)
+models/*.keras
+models/*.h5
+models/*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Logs / temp
+*.log
+*.tmp

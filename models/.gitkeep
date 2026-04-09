@@ -1,0 +1,2 @@
+# Les modèles entraînés seront sauvegardés ici (fichiers .keras et .pkl)
+# Ils sont ignorés par git car trop lourds — lancez train_models.py pour les générer.
