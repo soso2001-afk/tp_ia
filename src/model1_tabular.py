@@ -34,7 +34,7 @@ from sklearn.metrics import (
 
 MODELS = {
     "Logistic Regression": LogisticRegression(
-        max_iter=1000, multi_class="multinomial", random_state=42, C=1.0
+        max_iter=1000, random_state=42, C=1.0
     ),
     "Random Forest": RandomForestClassifier(
         n_estimators=200, max_depth=8, random_state=42, n_jobs=-1
